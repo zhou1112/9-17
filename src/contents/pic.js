@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 class Pic extends React.Component {
   handleClick(){
     let address = this.props.url;
-    browserHistory.push(`/blog/${address}`)
+    hashHistory.push(`/blog/${address}`)
   }
   render () {
     return(

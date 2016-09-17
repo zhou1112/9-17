@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, browserHistory, IndexRoute} from 'react-router';
+import { Router, Route, hashHistory, IndexRoute} from 'react-router';
 
 import App from './App';
 import Home from './Home';
@@ -11,7 +11,7 @@ import Blog from './Blog';
 class Routers extends React.Component{
   render(){
     return(
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home}/>
           <Route path="/messages" component={Messages}/>

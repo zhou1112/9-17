@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 class Home extends React.Component {
   handleClick(){
-    browserHistory.push('profile')
+    hashHistory.push('profile')
   }
   render () {
     return(
